@@ -1,0 +1,176 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container {
+    background: url(images/underwater.jpg);
+    height: 109vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    background-attachment: fixed;
+    border: 14px;
+}
+
+.fish-container {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.fish-container img {
+    position: absolute;
+    height: 100px; 
+}
+
+.fish1 {
+    top: 33%;
+    left: -10%;
+    transform: translateY(-50%);
+    animation: fishAnimation 8s linear infinite;
+}
+
+.fish2 {
+    top: 66%;
+    left: -10%;
+    transform: translateY(-50%);
+    animation: fishAnimation 8s linear infinite 5s;
+}
+
+.fish3 {
+    top: 110%;
+    left: -30%;
+    transform: translateY(-50%);
+    animation: fishAnimation2 10s linear infinite 3s;
+}
+
+.submarine {
+    position: absolute;
+    height: 65px !important;
+    top: 0;
+    left: 100%;
+    animation: submarineAnimation 10s linear infinite 3s;
+}
+
+.seahorse {
+    left: 200px; 
+    top: 500px;
+    width: 150px; 
+    height: 100px;
+    position: absolute;
+    animation: seahorseAnimation 10s linear infinite;
+    -webkit-animation: seahorseAnimation 10s linear infinite;
+    transform: scaleX(1);
+    -webkit-transform: scaleX(1);
+}
+
+.crab {
+    position: absolute;
+    height: 65px;
+    top: 400px;
+    left: 100%;
+    animation: crabAnimation 10s linear infinite;
+}
+
+.seasnail {
+    position: absolute;
+    height: 65px;
+    top: 400px;
+    left: 100%;
+    animation: seaSnailAnimation 10s linear infinite;
+}
+
+.seaweed1 {
+    position: absolute;
+    height: 150px;
+    top: 400px;
+    left: 100%;
+    animation: seaweed1Animation 10s linear infinite;
+}
+
+.seaweed2 {
+    position: absolute;
+    height: 65px;
+    top: 400px;
+    left: 100%;
+    animation: seaweed2Animation 10s linear infinite;
+}
+
+@keyframes fishAnimation {
+    0% {
+        left: -10%;
+    }
+    100% {
+        left: 150%;
+    }
+}
+
+@keyframes fishAnimation2 {
+    0% {
+        left: -50%;
+        top: 120%;
+    }
+    100% {
+        left: 110%;
+        top: 10%;
+    }
+}
+
+@keyframes submarineAnimation {
+    0% {
+        left: 100%;
+        top: 10px;
+    }
+    100% {
+        left: -10%;
+        top: 400px;
+    }
+}
+
+@-webkit-keyframes seahorseAnimation {
+    0% { left: 100px; top: 450px; -webkit-transform: scaleX(-1); }
+    1% { left: 100px; top: 450px; -webkit-transform: scaleX(-1); }
+    10% { left: 300px; top: 450px; -webkit-transform: scaleX(-1); }
+    20% { left: 600px; top: 450px; -webkit-transform: scaleX(-1); }
+    40% { left: 700px; top: 450px; }  
+    60% { left: 500px; top: 300px; }
+    80% { left: 400px; top: 300px; }
+    90% { left: 300px; top: 350px; }
+    100% { left: 100px; top: 450px; }
+}
+
+@keyframes seahorseAnimation {
+    0% { left: 100px; top: 450px; transform: scaleX(-1); }
+    1% { left: 100px; top: 450px; transform: scaleX(-1); }
+    10% { left: 300px; top: 450px; transform: scaleX(-1); }
+    20% { left: 600px; top: 450px; transform: scaleX(-1); }
+    40% { left: 700px; top: 450px; }  
+    60% { left: 500px; top: 300px; }
+    80% { left: 400px; top: 300px; }
+    90% { left: 300px; top: 350px; }
+    100% { left: 100px; top: 450px; }
+}
+
+@keyframes crabAnimation {
+    0% { left: 350px; top: 600px; }
+    100% { left: 350px; top: 600px; }
+}
+
+@keyframes seaSnailAnimation {
+    0% { left: 800px; top: 600px; }
+    100% { left: 800px; top: 600px; }
+}
+
+@keyframes seaweed1Animation {
+    0% { left: 1020px; top: 480px; }
+    100% { left: 1020px; top: 480px; }
+}
+
+@keyframes seaweed2Animation {
+    0% { left: 100px; top: 420px; }
+    100% { left: 100px; top: 420px; }
+}
